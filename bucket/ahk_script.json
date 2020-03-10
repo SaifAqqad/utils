@@ -7,7 +7,7 @@
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\")",
         "$Shortcut.TargetPath = \"$dir\\Script.exe\"",
         "$Shortcut.Save()"
-        ],
+    ],
     "uninstaller": {
         "script": [
             "$FileName = \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\"",
@@ -16,5 +16,11 @@
             " Remove-Item $FileName",
             "}"
         ]
-    }
+    },
+    "shortcuts": [
+        [
+            "Script.exe",
+            "AHK Script"
+        ]
+    ]
 }
