@@ -1,0 +1,15 @@
+{
+    "version": "1.1",
+    "url": "https://raw.githubusercontent.com/SaifAqqad/AHK_Script/master/src/Script.zip",
+    "hash": "2941C2D80B90416F161D97A59DB90F001C68E28A041CD634182D7D994461259C",
+    "post_install": [
+        "$action = New-ScheduledTaskAction -Execute '$dir\\Script.exe'",
+        "$trigger =  New-ScheduledTaskTrigger -AtLogon",
+        "Register-ScheduledTask -Action $action -Trigger $trigger -TaskName \"Script\" -Description \"AHK Script\""
+    ],
+    "uninstaller": {
+        "script": [
+            "Unregister-ScheduledTask -TaskName Script -Confirm:$false"
+        ]
+    }
+}
