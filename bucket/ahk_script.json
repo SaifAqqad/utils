@@ -1,7 +1,7 @@
 {
-    "version": "1.1",
+    "version": "1.2",
     "url": "https://raw.githubusercontent.com/SaifAqqad/AHK_Script/master/src/Script.zip",
-    "hash": "2941C2D80B90416F161D97A59DB90F001C68E28A041CD634182D7D994461259C",
+    "hash": "3E709557A062BB84651C8DED40D808E0798B4A69DBD069BC7C016C372DEF4380",
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\")",
