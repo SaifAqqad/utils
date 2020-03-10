@@ -3,13 +3,18 @@
     "url": "https://raw.githubusercontent.com/SaifAqqad/AHK_Script/master/src/Script.zip",
     "hash": "2941C2D80B90416F161D97A59DB90F001C68E28A041CD634182D7D994461259C",
     "post_install": [
-        "$action = New-ScheduledTaskAction -Execute '$dir\\Script.exe'",
-        "$trigger =  New-ScheduledTaskTrigger -AtLogon",
-        "Register-ScheduledTask -Action $action -Trigger $trigger -TaskName \"Script\" -Description \"AHK Script\""
-    ],
+        "$WshShell = New-Object -comObject WScript.Shell",
+        "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\")",
+        "$Shortcut.TargetPath = \"$dir\\Script.exe\"",
+        "$Shortcut.Save()"
+        ],
     "uninstaller": {
         "script": [
-            "Unregister-ScheduledTask -TaskName Script -Confirm:$false"
+            "$FileName = \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\"",
+            "if (Test-Path $FileName) ",
+            "{",
+            " Remove-Item $FileName",
+            "}"
         ]
     }
 }
