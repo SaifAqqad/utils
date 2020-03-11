@@ -1,8 +1,8 @@
 {
-    "version": "1.1",
+    "version": "1.2",
     "description": "Convert office documents to PDF format",
     "url": "https://raw.githubusercontent.com/SaifAqqad/AHK_Script/master/src/other/OfficeToPDF/OfficeToPDF.zip",
-    "hash": "043207A36B981753F991E667AC1350ED4573A14ABA4360F35FC01F5F3979FE29",
+    "hash": "700FA5E5759F9B11B70E9F818CF67FAB51E2FD8D065E12ECE1528518FAF0A3DA",
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\SendTo\\PDF file.lnk\")",
