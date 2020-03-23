@@ -3,7 +3,7 @@
     "homepage": "https://github.com/SaifAqqad/AHK_Script",
     "checkver": "github",
     "url": "https://github.com/SaifAqqad/AHK_Script/releases/latest/download/Script.exe",
-    "hash": "B74526B5FCDB99C6D3574FE65586871C1426587BBB46C04FF24DA2E1B3430434",
+    "hash": "B4241A86B43739B5EC5DEF3A20C0D88082F71D65AF9F7EB96527B09D7EE30B00",
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\")",
