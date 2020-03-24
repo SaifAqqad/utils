@@ -1,6 +1,6 @@
 {
     "version": "1.3.2",
-    "homepage": "https://github.com/SaifAqqad/AHK_Script#vmr_launcherahk",
+    "homepage": "https://github.com/SaifAqqad/AHK_Script/tree/master/src/other/VMR_launcher",
     "description": "Control VoiceMeeter from any app that can run executables",
     "checkver": {
         "github": "https://github.com/SaifAqqad/AHK_Script"
