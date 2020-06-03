@@ -1,9 +1,9 @@
 {
-    "version": "1.3.2",
+    "version": "1.3.3",
     "homepage": "https://github.com/SaifAqqad/AHK_Script",
     "checkver": "github",
     "url": "https://github.com/SaifAqqad/AHK_Script/releases/latest/download/Script.exe",
-    "hash": "B4241A86B43739B5EC5DEF3A20C0D88082F71D65AF9F7EB96527B09D7EE30B00",
+    "hash": "BC851871EA01F9DA1B12F1A1E4B9329765F5CA8B2D8F9B08D5EB7B977C9BBF6E",
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\")",
@@ -22,7 +22,7 @@
     "shortcuts": [
         [
             "Script.exe",
-            "AHK Script"
+            "SaifAqqad/AHK_Script"
         ]
     ]
 }

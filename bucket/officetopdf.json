@@ -1,12 +1,12 @@
 {
-    "version": "1.3.2",
+    "version": "1.3.3",
     "homepage": "https://github.com/SaifAqqad/AHK_Script/tree/master/src/other/OfficeToPDF",
     "description": "Convert office documents to PDF format",
     "checkver": {
         "github": "https://github.com/SaifAqqad/AHK_Script"
     },
     "url": "https://github.com/SaifAqqad/AHK_Script/releases/latest/download/OfficeToPDF.exe",
-    "hash": "6C521512462CD7DF542818D09B5BB5134F6E97923FF5B5F91F23DFBE1E83134B",
+    "hash": "6B70D5B1153358B3E640B59B0F2B747E6D8F770A0266EFC600752AF701E5848B",
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\SendTo\\PDF file.lnk\")",
