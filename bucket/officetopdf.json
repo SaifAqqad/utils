@@ -6,7 +6,7 @@
         "github": "https://github.com/SaifAqqad/AHK_Script"
     },
     "url": "https://github.com/SaifAqqad/AHK_Script/releases/latest/download/OfficeToPDF.exe",
-    "hash": "6B70D5B1153358B3E640B59B0F2B747E6D8F770A0266EFC600752AF701E5848B",
+    "hash": "C45A152ADA9CA080557EF9A517C41C57939978A6A7576DB11A683515D9ADF630",
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\SendTo\\PDF file.lnk\")",
