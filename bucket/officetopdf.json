@@ -22,6 +22,7 @@
             "}"
         ]
     },
+    "depends": "ghostscript",
     "notes": [
         "Usage:",
         "1. Select the files you want to convert.",
