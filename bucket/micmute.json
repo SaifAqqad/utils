@@ -4,9 +4,6 @@
     "checkver": "github",
     "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/latest/download/MicMute.exe",
     "hash": "A841969271E3B71001CA46AECDAE7F7A7CDF4B22EA97C7BBFE81EC9C374EFDE0",
-    "persist": [
-        "config.ini"
-    ],
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MicMute.lnk\")",
