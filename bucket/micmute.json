@@ -1,9 +1,10 @@
 {
-    "version": "0.1",
+    "version": "0.1.1",
     "homepage": "https://github.com/SaifAqqad/AHK_MicMute",
     "checkver": "github",
     "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/latest/download/MicMute.exe",
-    "hash": "A841969271E3B71001CA46AECDAE7F7A7CDF4B22EA97C7BBFE81EC9C374EFDE0",
+    "hash": "0F04DB0FC431179A50E31E71E4F16119256DC512308FF74BB7B9C7A56A142C69",
+    "persist": "$dir\\config.ini",
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MicMute.lnk\")",
