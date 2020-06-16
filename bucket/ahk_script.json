@@ -8,6 +8,7 @@
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\")",
         "$Shortcut.TargetPath = \"$dir\\Script.exe\"",
+        "$Shortcut.WorkingDirectory  = \"$dir\\\"",
         "$Shortcut.Save()"
     ],
     "uninstaller": {

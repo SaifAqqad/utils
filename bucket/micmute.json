@@ -8,6 +8,7 @@
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MicMute.lnk\")",
         "$Shortcut.TargetPath = \"$dir\\MicMute.exe\"",
+        "$Shortcut.WorkingDirectory  = \"$dir\\\"",
         "$Shortcut.Save()"
     ],
     "uninstaller": {
