@@ -1,10 +1,14 @@
 {
-    "version": "0.2",
+    "version": "0.3",
     "homepage": "https://github.com/SaifAqqad/AHK_MicMute",
     "checkver": "github",
-    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.2/MicMute.exe",
-    "hash": "3819EA71753CB5006959A5BA21AF9016B9ED8295B24CBFC64AEF1A60EA92B1D7",
+    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.3/MicMute.exe",
+    "hash": "410F4D4FFF39952A4517C01EA2B3131591FEF37A52A0C31B3E330B39C6DD432C",
     "pre_install": [
+        "$MicMuteProc = Get-Process -name MicMute -ErrorAction \"Ignore\"",
+        "if ($MicMuteProc -ne $null) {",
+        "Stop-Process -Name MicMute",
+        "}",
         "function ensureFile([String] $name) {",
         "    if (!(Test-Path \"$persist_dir\\$name\") -and !(Test-Path \"$dir\\$name\")) {",
         "        Add-Content -Path \"$dir\\$name\" -Value $null",
