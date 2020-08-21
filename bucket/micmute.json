@@ -1,9 +1,9 @@
 {
-    "version": "0.3",
+    "version": "0.3.1",
     "homepage": "https://github.com/SaifAqqad/AHK_MicMute",
     "checkver": "github",
-    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.3/MicMute.exe",
-    "hash": "410F4D4FFF39952A4517C01EA2B3131591FEF37A52A0C31B3E330B39C6DD432C",
+    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.3.1/MicMute.exe",
+    "hash": "4FF81668AB93F6409EA0F89C7BBD3786E99497E861AF2573C4BC9EE7C80E572E",
     "pre_install": [
         "$MicMuteProc = Get-Process -name MicMute -ErrorAction \"Ignore\"",
         "if ($MicMuteProc -ne $null) {",
