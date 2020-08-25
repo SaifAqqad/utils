@@ -1,14 +1,10 @@
 {
-    "version": "0.4.1",
+    "version": "0.5",
     "homepage": "https://github.com/SaifAqqad/AHK_MicMute",
     "checkver": "github",
-    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.4.1/MicMute.exe",
-    "hash": "F3D045721338EEAB9EB4194FCDF2DBA914EBB6E5BBEB5AEC13187FDE1E32BCDB",
+    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.5/MicMute.exe",
+    "hash": "C1F5F49F31FBB2663EEBE55093517B045DDE3CD3D53AD0A13471FAFC665FA03D",
     "pre_install": [
-        "$MicMuteProc = Get-Process -name MicMute -ErrorAction \"Ignore\"",
-        "if ($MicMuteProc -ne $null) {",
-        "Stop-Process -Name MicMute",
-        "}",
         "function ensureFile([String] $name) {",
         "    if (!(Test-Path \"$persist_dir\\$name\") -and !(Test-Path \"$dir\\$name\")) {",
         "        Add-Content -Path \"$dir\\$name\" -Value $null",
@@ -18,13 +14,6 @@
     ],
     "persist": [
         "config.ini"
-    ],
-    "post_install": [
-        "$WshShell = New-Object -comObject WScript.Shell",
-        "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MicMute.lnk\")",
-        "$Shortcut.TargetPath = \"$dir\\MicMute.exe\"",
-        "$Shortcut.WorkingDirectory  = \"$dir\\\"",
-        "$Shortcut.Save()"
     ],
     "uninstaller": {
         "script": [
