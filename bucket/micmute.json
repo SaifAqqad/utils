@@ -1,9 +1,9 @@
 {
-    "version": "0.6.2",
+    "version": "0.6.3",
     "homepage": "https://github.com/SaifAqqad/AHK_MicMute",
     "checkver": "github",
-    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.6.2/MicMute.exe",
-    "hash": "3A23BDC3A0996F48C2826177729B033176153B42AB1788E6CB2A7D14E8DB9C55",
+    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.6.3/MicMute.exe",
+    "hash": "B2E3D9C00EEA0012DBB1E4A4AFBBD6CD9C06557CC164192305F47CEC87AF5790",
     "pre_install": [
         "function ensureFile([String] $name) {",
         "    if (!(Test-Path \"$persist_dir\\$name\") -and !(Test-Path \"$dir\\$name\")) {",
