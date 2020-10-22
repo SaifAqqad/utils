@@ -1,19 +1,21 @@
 {
-    "version": "0.6.3",
+    "version": "0.7",
     "homepage": "https://github.com/SaifAqqad/AHK_MicMute",
     "checkver": "github",
-    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.6.3/MicMute.exe",
-    "hash": "B2E3D9C00EEA0012DBB1E4A4AFBBD6CD9C06557CC164192305F47CEC87AF5790",
+    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/v0.7/MicMute.exe",
+    "hash": "E13EDF40CFCB88B3255EB82DEB798DAFFF03E0873F5F7311EF7F6EE0C792C8DB",
     "pre_install": [
         "function ensureFile([String] $name) {",
         "    if (!(Test-Path \"$persist_dir\\$name\") -and !(Test-Path \"$dir\\$name\")) {",
         "        Add-Content -Path \"$dir\\$name\" -Value $null",
         "    }",
         "}",
-        "ensureFile 'config.ini'"
+        "ensureFile 'config.ini'",
+        "ensureFile 'config.json'"
     ],
     "persist": [
-        "config.ini"
+        "config.ini",
+        "config.json"
     ],
     "uninstaller": {
         "script": [
