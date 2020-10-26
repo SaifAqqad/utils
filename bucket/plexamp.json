@@ -1,0 +1,9 @@
+{
+    "version": "1.1.0",
+    "homepage": "https://plexamp.com/",
+    "url": "https://plexamp.plex.tv/plexamp.plex.tv/Plexamp%20Setup%201.1.0.exe",
+    "hash": "C38DE045826C02273C65563221676A9FCBC4638E167CAFEA9CC5B2400ACD2357",
+    "installer":{
+        "args": "/S"
+    }
+}
