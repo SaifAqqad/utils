@@ -1,9 +1,9 @@
 {
-    "version": "0.7.5",
+    "version": "0.7.6",
     "homepage": "https://github.com/SaifAqqad/AHK_MicMute",
     "checkver": "github",
-    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/0.7.5/MicMute.exe",
-    "hash": "8f53a1574d72d5b6bcca8e4c034fd89a254fcbd2101862da4ff63ff70f016e9d",
+    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/0.7.6/MicMute.exe",
+    "hash": "35aa23ebfa76b9973b9f8c4c1dc2d58a3a6e209083508beeaea7caa596a94b66",
     "autoupdate": {
         "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/$version/MicMute.exe"
     },
