@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/SaifAqqad/Ahk2Exe/raw/master/AutoHotkey_1.1.33.06_CLI.exe#/dl.7z",
-            "hash": "8880FAA47C55D3B654FFEDAEDB8A9A77FBAB961B3E8E6B64B462C99B3289137C",
+            "hash": "B7DBF8CD8AD8BE7A4AB73C292E33F36E2FE4169B84B34A845EC3B41EF02E8200",
             "bin": [
                 "autohotkeyu64.exe",
                 [
