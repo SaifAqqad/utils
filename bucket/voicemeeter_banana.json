@@ -2,21 +2,9 @@
     "version": "2.0.5.8",
     "homepage": "https://vb-audio.com/Voicemeeter/banana.htm",
     "license": "donationware",
-    "url": "https://download.vb-audio.com/Download_CABLE/VoicemeeterProSetup.exe",
-    "hash": "C2CB42F7FC6E4E423ED315ED2415AE32DE827E37F6FBF7CC9010D23A96B3BF00",
-    "installer": {
-        "args": [
-            "/VERYSILENT",
-            "/NORESTART",
-            "/DIR=\"$dir\""
-        ]
-    },
-    "uninstaller": {
-        "file": "uninst\\unins000.exe",
-        "args": [
-            "/VERYSILENT"
-        ]
-    },
+    "url": "https://github.com/SaifAqqad/utils/raw/master/Voicemeeter.zip",
+    "extract_to": "",
+    "hash": "2D45C2BFC8ACDEAD4CD0B323DFF2CB975388F2BB5CBC88A8B59D440334C2CE12",
     "shortcuts": [
         [
             "voicemeeterpro.exe",
