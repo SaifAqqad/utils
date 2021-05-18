@@ -10,5 +10,6 @@
             "voicemeeterpro.exe",
             "Voicemeeter Banana"
         ]
-    ]
+    ],
+    "bin":["voicemeeterpro.exe"]
 }
