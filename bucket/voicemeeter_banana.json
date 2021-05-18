@@ -2,7 +2,7 @@
     "version": "2.0.5.8",
     "homepage": "https://vb-audio.com/Voicemeeter/banana.htm",
     "license": "donationware",
-    "url": "https://github.com/SaifAqqad/utils/raw/master/Voicemeeter.zip",
+    "url": "https://github.com/SaifAqqad/utils/releases/download/voicemeeter/Voicemeeter.zip",
     "extract_to": "",
     "hash": "2D45C2BFC8ACDEAD4CD0B323DFF2CB975388F2BB5CBC88A8B59D440334C2CE12",
     "shortcuts": [
