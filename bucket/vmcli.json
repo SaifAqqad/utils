@@ -1,0 +1,16 @@
+{
+    "version": "1.2",
+    "homepage": "https://github.com/rpetti/vmcli",
+    "description": "Unofficial VoiceMeeter CLI",
+    "checkver": {
+        "github": "https://github.com/rpetti/vmcli"
+    },
+    "url": "https://github.com/rpetti/vmcli/releases/download/v1.2/vmcli.exe",
+    "hash": "D144E134E9D1D4C993F5EA139ED4C10AC2C6FEA9C3F2D0CB5CACE31314746835",
+    "bin": [
+        [
+            "vmcli.exe",
+            "vmcli"
+        ]
+    ]
+}
