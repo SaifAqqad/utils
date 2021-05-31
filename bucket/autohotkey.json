@@ -1,12 +1,12 @@
 {
-    "version": "1.1.33.06",
+    "version": "1.1.33.09",
     "description": "The ultimate automation scripting language for Windows.",
     "homepage": "https://www.autohotkey.com/",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SaifAqqad/Ahk2Exe/raw/master/AutoHotkey_1.1.33.06_CLI.exe#/dl.7z",
-            "hash": "01E497B3D8C5487734B5E5BDD03EEE3738DD68EEB8AAEE5457882F12BF4D9996",
+            "url": "https://github.com/SaifAqqad/Ahk2Exe/raw/master/AutoHotkey_1.1.33.09_CLI.exe#/dl.7z",
+            "hash": "B39909A964A1BCBB84351B5EE5005C45CF165B5381C02AD1532F019189296E99",
             "bin": [
                 "autohotkeyu64.exe",
                 [
