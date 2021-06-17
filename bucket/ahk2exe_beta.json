@@ -1,0 +1,25 @@
+{
+    "version": "1.1.33.09_Beta_2",
+    "homepage": "https://github.com/SaifAqqad/Ahk2Exe",
+    "description": "Beta version of the AHK compiler (Ahk2Exe)",
+    "checkver": {
+        "github": "https://github.com/SaifAqqad/Ahk2Exe"
+    },
+    "url": "https://github.com/SaifAqqad/Ahk2Exe/releases/download/1.1.33.09_Beta_2/Ahk2Exe.exe",
+    "hash": "BECC20799313F636762005B274020CA79223EF13ABC9964864E3C4773A2DCEA2",
+    "installer": {
+        "script": [
+            "$compilerDir = scoop prefix autohotkey;",
+            "Rename-Item -Path \"$compilerDir\\Compiler\\Ahk2Exe.exe\" -NewName \"BACKUP_Ahk2Exe.exe\";",
+            "Copy-Item -Path \"$dir\\$fname\" -Destination  \"$compilerDir\\Compiler\\Ahk2Exe.exe\";"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$compilerDir = scoop prefix autohotkey;",
+            "Remove-Item -Path \"$compilerDir\\Compiler\\Ahk2Exe.exe\";",
+            "Rename-Item -Path \"$compilerDir\\Compiler\\BACKUP_Ahk2Exe.exe\" -NewName \"Ahk2Exe.exe\";"
+        ]
+    },
+    "depends": "extras/autohotkey"
+}
