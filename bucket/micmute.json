@@ -1,38 +1,32 @@
 {
-    "version": "0.9.2",
+    "version": "1.2.2",
+    "description": "Microphone controller using keyboard/mouse shortcuts",
     "homepage": "https://github.com/SaifAqqad/AHK_MicMute",
-    "checkver": "github",
-    "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/0.9.2/MicMute.exe",
-    "hash": "88215f4dbae0f774cfa65798bbbad5a989624485887aa65f4cab017887b84903",
-    "autoupdate": {
-        "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/$version/MicMute.exe"
+    "license": "Unlicense",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/1.2.2/MicMute.exe",
+            "hash": "5d07f0103b5727a3df300dc939ca3a989980e5dd875b1fe55c8c1a152c71f815"
+        }
     },
-    "pre_install": [
-        "function ensureFile([String] $name) {",
-        "    if (!(Test-Path \"$persist_dir\\$name\") -and !(Test-Path \"$dir\\$name\")) {",
-        "        Add-Content -Path \"$dir\\$name\" -Value $null",
-        "    }",
-        "}",
-        "ensureFile 'config.ini'",
-        "ensureFile 'config.json'"
-    ],
-    "persist": [
-        "config.ini",
-        "config.json"
-    ],
-    "uninstaller": {
-        "script": [
-            "$FileName = \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MicMute.lnk\"",
-            "if (Test-Path $FileName) ",
-            "{",
-            " Remove-Item $FileName",
-            "}"
-        ]
-    },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\config.json\")) { New-Item \"$dir\\config.json\" | Out-Null }",
     "shortcuts": [
         [
             "MicMute.exe",
-            "SaifAqqad/MicMute"
+            "MicMute"
         ]
-    ]
+    ],
+    "persist": "config.json",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SaifAqqad/AHK_MicMute/releases/download/$version/MicMute.exe"
+            }
+        },
+        "hash": {
+            "url": "$urlNoExt.sha256",
+            "regex": "$sha256"
+        }
+    }
 }

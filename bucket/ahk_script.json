@@ -1,25 +1,11 @@
 {
-    "version": "2.0",
+    "version": "2.1",
     "homepage": "https://github.com/SaifAqqad/AHK_Script",
     "checkver": "github",
     "url": "https://github.com/SaifAqqad/AHK_Script/releases/latest/download/Script.exe",
-    "hash": "FEE05DDD6A9F94511071F3902EF5AEA6190AD7876FBF1D984435B903475E117E",
-    "post_install": [
-        "$WshShell = New-Object -comObject WScript.Shell",
-        "$Shortcut = $WshShell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\")",
-        "$Shortcut.TargetPath = \"$dir\\Script.exe\"",
-        "$Shortcut.WorkingDirectory  = \"$dir\\\"",
-        "$Shortcut.Save()"
-    ],
-    "uninstaller": {
-        "script": [
-            "$FileName = \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Script.lnk\"",
-            "if (Test-Path $FileName) ",
-            "{",
-            " Remove-Item $FileName",
-            "}"
-        ]
-    },
+    "hash": "13ACEF0F398119E32753FBDCCF427E25CF761FF45B60DF7E465EE94336B2937B",
+    "persist": "config.json",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\config.json\")) { New-Item \"$dir\\config.json\" | Out-Null }",
     "shortcuts": [
         [
             "Script.exe",
