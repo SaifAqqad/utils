@@ -1,9 +1,9 @@
 {
-    "version": "2.1",
+    "version": "2.2",
     "homepage": "https://github.com/SaifAqqad/AHK_Script",
     "checkver": "github",
     "url": "https://github.com/SaifAqqad/AHK_Script/releases/latest/download/Script.exe",
-    "hash": "13ACEF0F398119E32753FBDCCF427E25CF761FF45B60DF7E465EE94336B2937B",
+    "hash": "448FF6ADD75DB2003DEB5DFD91D874E3000268EB40DD14FFBD6E64733024C20A",
     "persist": "config.json",
     "pre_install": "if (!(Test-Path \"$persist_dir\\config.json\")) { New-Item \"$dir\\config.json\" | Out-Null }",
     "shortcuts": [
