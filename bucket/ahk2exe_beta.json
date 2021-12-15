@@ -1,9 +1,9 @@
 {
-    "version": "1.1.34.00_Beta_5",
+    "version": "1.1.34.00_Beta_9",
     "homepage": "https://github.com/AutoHotkey/Ahk2Exe",
     "description": "Beta version of the AHK compiler (Ahk2Exe)",
-    "url": "https://github.com/AutoHotkey/Ahk2Exe/releases/download/Ahk2Exe_v1.1.34.00_Beta_5/Ahk2Exe1.1.34.00_Beta_5.zip",
-    "hash": "13BB645F4EFC9E1B7642402AEEA23E90DD7EA5F6A3F05990635B6F005D2A5F23",
+    "url": "https://github.com/AutoHotkey/Ahk2Exe/releases/download/Ahk2Exe1.1.34.00_Beta_9/Ahk2Exe1.1.34.00_Beta_9.zip",
+    "hash": "a2d2a15e005a644fec853e4720c642a83dc2010ec988848f1d3edab542e0a9d4",
     "installer": {
         "script": [
             "$compilerDir = scoop prefix autohotkey;",
